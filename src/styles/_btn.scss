@@ -1,0 +1,22 @@
+.btn {
+  @include transition();
+
+  width: 200px;
+
+  background-color:$color-blue ;
+  border-radius: 5px;
+  border: none;
+
+  font-size: $fz-16;
+  font-weight: $fw-700;
+  color: $color-white;
+
+  padding: 20px 20px;
+  margin-bottom: 201px;
+
+  &:hover{
+    cursor: pointer;
+    background-color: $color-light-gray-border;
+  }
+}
+

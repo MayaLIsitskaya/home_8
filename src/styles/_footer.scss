@@ -1,0 +1,67 @@
+.footer {
+  background-color: $color-gray-blue;
+
+  height: 252px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-container {
+  display: flex;
+  align-items: baseline;
+  gap: 60px;
+}
+
+.contact-item {
+  color: $color-white;
+  font-weight: $fw-400;
+  font-size: $fz-14;
+  line-height: 24px;
+
+  padding-top: 9px;
+}
+
+.join {
+  color: $color-white;
+  font-weight: $fw-400;
+  font-size: $fz-14;
+  line-height: 16.41px;
+  padding-bottom: 9px;
+}
+
+.join-socials {
+  @include flex-sa();
+  gap: 15px;
+}
+
+.circle {
+  @include transition();
+
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  height: 44px;
+  width: 44px;
+  position: relative;
+}
+
+.circle:hover {
+  background-color: $color-blue ;
+}
+
+.img {
+  position: absolute;
+  height: 50%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+}
+
+.contact-item a {
+  @include transition();
+  color:$color-gray;
+}
+
+.contact-item a:hover {
+  color: $color-blue;
+}
